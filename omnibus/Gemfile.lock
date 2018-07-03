@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/chef/omnibus-software
-  revision: ff6dbf50afc4ad4c2b157deb1f38bf636197ca55
+  revision: 836bd650d49e6350dfa40b43a1398c5847a6fd42
   branch: master
   specs:
     omnibus-software (4.0.0)
@@ -31,13 +31,13 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     awesome_print (1.8.0)
-    aws-sdk (2.11.78)
-      aws-sdk-resources (= 2.11.78)
-    aws-sdk-core (2.11.78)
+    aws-sdk (2.11.80)
+      aws-sdk-resources (= 2.11.80)
+    aws-sdk-core (2.11.80)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.11.78)
-      aws-sdk-core (= 2.11.78)
+    aws-sdk-resources (2.11.80)
+      aws-sdk-core (= 2.11.80)
     aws-sigv4 (1.0.3)
     berkshelf (4.3.5)
       addressable (~> 2.3, >= 2.3.4)
@@ -128,7 +128,7 @@ GEM
       mixlib-log
     mixlib-authentication (2.1.1)
     mixlib-cli (1.7.0)
-    mixlib-config (2.2.8)
+    mixlib-config (2.2.11)
       tomlrb
     mixlib-install (3.10.0)
       mixlib-shellout
