@@ -108,3 +108,9 @@ suites:
   - name: end-to-end
     run_list:
       - recipe[end_to_end::default]
+  - name: rspec
+    run_list:
+      - recipe[end_to_end::nothing]
+    lifecycle:
+      post_converge:
+        - remote: echo "FOO"
