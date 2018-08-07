@@ -113,4 +113,4 @@ suites:
       - recipe[nothing]
     lifecycle:
       post_converge:
-        - remote: cd $(dirname $(dirname $(/opt/chef/embedded/bin/gem which chef))) && /opt/chef/embedded/bin/bundle exec /opt/chef/embedded/bin/rake spec
+        - remote: cd /opt/chef/embedded/lib/ruby/gems/*/gems/chef-[0-9]* && /opt/chef/embedded/bin/bundle exec /opt/chef/embedded/bin/rake spec
