@@ -113,4 +113,4 @@ suites:
       - recipe[nothing]
     lifecycle:
       post_converge:
-        - remote: echo "FOO"
+        - remote: cd $(dirname $(dirname $(/opt/chef/embedded/bin/gem which chef))) && /opt/chef/embedded/bin/bundle exec /opt/chef/embedded/bin/rake spec
