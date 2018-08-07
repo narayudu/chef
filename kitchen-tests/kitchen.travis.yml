@@ -110,7 +110,7 @@ suites:
       - recipe[end_to_end::default]
   - name: rspec
     run_list:
-      - recipe[nothing]
+      - recipe[rspec]
     lifecycle:
       post_converge:
-        - remote: cd /opt/chef/embedded/lib/ruby/gems/*/gems/chef-[0-9]* && /opt/chef/embedded/bin/bundle exec /opt/chef/embedded/bin/rake spec
+        - remote: /usr/local/bin/run-chef-rspec

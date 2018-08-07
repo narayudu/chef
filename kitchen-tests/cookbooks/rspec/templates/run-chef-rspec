@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd $(dirname $(dirname $(/opt/chef/embedded/bin/gem which chef))) && /opt/chef/embedded/bin/bundle exec /opt/chef/embedded/bin/rake spec

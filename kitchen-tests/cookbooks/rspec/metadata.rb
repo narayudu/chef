@@ -1,4 +1,4 @@
-name             "nothing"
+name             "rspec"
 license          "Apache-2.0"
 description      "Runs nothing"
 version          "1.0.0"
