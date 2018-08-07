@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd /opt/chef/embedded/apps/chef
-/opt/chef/embddded/bin/bundle install
+/opt/chef/embedded/bin/bundle install
 /opt/chef/embedded/bin/bundle exec /opt/chef/embedded/bin/rake spec
