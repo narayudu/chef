@@ -2,4 +2,4 @@
 
 cd /opt/chef/embedded/apps/chef
 /opt/chef/embedded/bin/bundle install
-/opt/chef/embedded/bin/bundle exec /opt/chef/embedded/bin/rspec
+/opt/chef/embedded/bin/bundle exec /opt/chef/embedded/bin/rspec --format progress --color
