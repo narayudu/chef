@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cat /etc/hosts
+ls -la /dev
+df -k /dev
 export PATH=/opt/chef/embedded/bin:$PATH
 cd /opt/chef/embedded/apps/chef
 /opt/chef/embedded/bin/bundle install
