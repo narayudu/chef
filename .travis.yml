@@ -14,6 +14,9 @@ before_install:
   - bundle --version
   - rm -f .bundle/config
   - gem uninstall rspec -v 3.8.0
+    # to add ipv6 to docker containers
+  - echo '{"ipv6":true,"fixed-cidr-v6":"2001:db8:1::/64"}' | sudo tee /etc/docker/daemon.json
+  - sudo service docker restart
 
 before_script:
  # force all .rspec tests into progress display to reduce line count
