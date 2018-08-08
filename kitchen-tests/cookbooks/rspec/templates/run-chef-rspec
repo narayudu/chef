@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ `uname -s` == "Linux" ]; then
+  mknod -m 660 /dev/ram0 b 1 0
+  mknod -m 660 /dev/ram1 b 1 1
+fi
+
 cat /etc/hosts
 ls -la /dev
 df -k /dev

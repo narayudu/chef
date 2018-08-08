@@ -70,8 +70,6 @@ platforms:
     pid_one_command: /usr/lib/systemd/systemd
     intermediate_instructions:
       - RUN yum -y install cronie util-linux mkfs.ext2
-      - RUN mknod -m 660 /dev/ram0 b 1 0
-      - RUN mknod -m 660 /dev/ram1 b 1 1
       - RUN sed -i -e "s/Defaults.*requiretty.*/Defaults    !requiretty/g" /etc/sudoers
 
 - name: fedora-latest
