@@ -72,7 +72,6 @@ platforms:
       - RUN yum -y install cronie util-linux mkfs.ext2
       - RUN mknod -m 660 /dev/ram0 b 1 0
       - RUN mknod -m 660 /dev/ram1 b 1 1
-      - RUN chown root:disk /dev/ram0 /dev/ram1
       - RUN sed -i -e "s/Defaults.*requiretty.*/Defaults    !requiretty/g" /etc/sudoers
 
 - name: fedora-latest
