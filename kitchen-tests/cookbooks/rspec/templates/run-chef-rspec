@@ -8,7 +8,7 @@ fi
 
 # remove ip6 entries for docker
 egrep -v "ip6" > /etc/hosts.new
-cp /etc/hosts.new /etc/hosts
+cat /etc/hosts.new > /etc/hosts
 
 cat /etc/hosts
 ls -la /dev
