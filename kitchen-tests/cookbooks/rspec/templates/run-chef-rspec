@@ -7,8 +7,8 @@ if [ `uname -s` == "Linux" ]; then
 fi
 
 # remove ip6 entries for docker
-egrep -v "ip6" > /etc/hosts.new
-cat /etc/hosts.new > /etc/hosts
+egrep -v "ip6" /etc/hosts > /etc/hosts.new
+cp /etc/hosts.new /etc/hosts
 
 cat /etc/hosts
 ls -la /dev
